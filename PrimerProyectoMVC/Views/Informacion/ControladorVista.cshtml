@@ -1,0 +1,36 @@
+﻿
+@model PrimerProyectoMVC.Models.Persona
+
+@{
+    ViewBag.Title = "ControladorVista";
+}
+
+<h2>Enviar informacion controlador vista</h2>
+<dl>
+    <dt>
+        @Model.Nombre
+    </dt>
+    <dd>Apellidos: @Model.Apellidos</dd>
+    <dd>Edad: @Model.Edad</dd>
+</dl>
+<hr />
+<h3 style="color:blueviolet">Empezando MVC</h3>
+
+
+<p>Para dibujar en servidor se usa lenguaje RAZOR</p>
+<p>
+    Es un lenguaje muy sencillo y es C#
+    Con la arroba empezamos un bloque de codigo C#
+    Cada vez que encuentra codigo HTML, termina el bloque
+</p>
+<h3 style="color:blueviolet">@ViewData["APP"]</h3>
+<h3 style="color:blueviolet">@ViewBag.Contenido</h3>
+
+@if (true)
+{
+    for (int i = 0; i <= 5; i++)
+    {
+        <h6>HTML @i</h6>
+    }
+}
+
